@@ -1,9 +1,12 @@
 const crypto = require('crypto');
 const { promisify } = require('util');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-require
 const jwt = require('jsonwebtoken');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-require
 const User = require('./../models/userModel');
 const catchAsync = require('./../utils/catchAsync');
 const AppError = require('./../utils/appError');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-require
 const sendEmail = require('./../utils/email');
 
 const signToken = id => {
